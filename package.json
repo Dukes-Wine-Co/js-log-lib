@@ -13,9 +13,12 @@
   ],
   "scripts": {
     "audit": "npm audit --audit-level=high --registry=https://registry.npmjs.org",
+    "publish": "npm publish --access public",
     "test": "NODE_ENV=test mocha --recursive --timeout 10000 'test/unit/**/*.spec.js'"
   },
-  "author": "Dukes Wine Engineering",
+  "author": "DWC Engineering Team",
+  "email": "engineering@dukeswines.com",
+  "url": "https://dukeswines.com",
   "license": "ISC",
   "dependencies": {
     "winston": "^3.3.3"
