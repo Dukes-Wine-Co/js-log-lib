@@ -1,6 +1,6 @@
 {
   "name": "@dukes-wine/js-log-library",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "engines": {
     "node": ">=14.0.0",
     "npm": ">=6.0.0"
@@ -26,6 +26,7 @@
   "url": "https://dukeswines.com",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.13.10",
     "winston": "^3.3.3"
   },
   "devDependencies": {
@@ -35,7 +36,6 @@
     "@babel/plugin-transform-classes": "^7.9.5",
     "@babel/plugin-transform-runtime": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
-    "@babel/runtime": "^7.13.10",
     "@dukes-wine/eslint-config-dukes-wine": "^1.3.1",
     "babel-eslint": "^10.1.0",
     "chai": "^4.2.0",
