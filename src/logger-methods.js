@@ -2,15 +2,15 @@ const logger = require('./logger');
 
 const logDetails = req => {
     const statusCode = req.res?.statusCode || '';
-    const originalPath = req.originalUrl || '';
-    const referer = req.headers.referer || '';
-    const userAgent = req.headers['user-agent'] || '';
-    const ip = req.headers['x-forwarded-for'] || req.connection?.remoteAddress || '';
-    const acceptLanguage = req.headers['accept-language'] || '';
-    const domain = req.headers.host || '';
-    const correlationId = req.correlationId?.() || '';
+    const originalPath = req?.originalUrl || '';
+    const referer = req?.headers?.referer || '';
+    const userAgent = req?.headers?.['user-agent'] || '';
+    const ip = req?.headers?.['x-forwarded-for'] || req?.connection?.remoteAddress || '';
+    const acceptLanguage = req?.headers?.['accept-language'] || '';
+    const domain = req?.headers?.host || '';
+    const correlationId = req?.correlationId?.() || '';
     const timestamp = Date.now();
-    const redirectedUrl = req.res?.getHeaders?.().location || '';
+    const redirectedUrl = req?.res?.getHeaders?.()?.location || '';
 
     return {
         statusCode,

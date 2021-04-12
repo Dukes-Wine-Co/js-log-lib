@@ -1,4 +1,4 @@
-const {logDetails} = require('./logger-methods');
+const { logDetails } = require('./logger-methods');
 
 const logError = (logger, msg, req) => {
 	const msgObj = { log: msg };
