@@ -14,7 +14,7 @@ class Logger {
 			format.json()
 		);
 
-		const logFormat = format.printf((log) => {
+		const logFormat = format.printf(log => {
 			const colorize = options?.colorize;
 
 			const logString = options?.flat ? JSON.stringify(log) : JSON.stringify(log, null, 4);
